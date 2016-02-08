@@ -46,4 +46,9 @@ Ya que tengamos Ruby y rbenv instalados, hay algunos commandos que podemos ver p
 
 * ```rbenv``` (debería mostrar el menú de rbenv)
 * ```ruby -v``` (ahora debería ser 2.2.3)
-* 
+
+####No tengo Homebrew
+Fácil, solo instlálalo: ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```.
+Homebrew es un manejador de paquetes para installar programas de manera más sencilla en tu sistema. Podríamos decir que es un estándar de la industria.
+
+###Instalando en Linux
