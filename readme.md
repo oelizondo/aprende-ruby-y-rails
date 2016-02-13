@@ -75,6 +75,7 @@ Ya teniendo rbenv podemos hacer lo siguiente:
 
 La instalación en Windows es diferente, es muy común instalar lenguajes de programación por medio de un wizard. Hay una página que se encarga de esto por nosotros:
 
-* (Ruby Installer)[http://rubyinstaller.org/]
+* [Ruby Installer](http://rubyinstaller.org/)
+
 
 ##Interactive Shell
