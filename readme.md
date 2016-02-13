@@ -14,11 +14,11 @@
   * Linux
   * Windows
 
-  Para aquellos que ya cuentan con una máquina de derivado * NIX, no
-  habrá mucho problema, porque Ruby ya viene en sus máquinas. Sin
-  embargo, es importante tener un manejador de versiones de Ruby para
-  poder manejar distintas gemas y librerías. Adicionalmente, la versión de
-  Ruby que tienen por predeterminado estas máquinas es antigua.
+Para aquellos que ya cuentan con una máquina de derivado * NIX, no
+habrá mucho problema, porque Ruby ya viene en sus máquinas. Sin
+embargo, es importante tener un manejador de versiones de Ruby para
+poder manejar distintas gemas y librerías. Adicionalmente, la versión de
+Ruby que tienen por predeterminado estas máquinas es antigua.
 
 ####Cómo checar tu versión de Ruby
 
@@ -33,8 +33,7 @@ instalar Ruby, de otra manera, hay que actualizarlo. Para esto,
 utilizaremos un manejador de versiones. Hay dos manejadores de versiones
 populares, RVM y Rbenv. Para este tutorial vamos a usar Rbenv.
 
-  1. Para OS X, la mejor manera de tener Rbenv installado es via
-Homebrew.
+  1. Para OS X, la mejor manera de tener Rbenv installado es via Homebrew.
   2. ```brew update```
   3. ```brew install rbenv```
   4. ```rbenv init``` (después de la instalación)
@@ -48,7 +47,34 @@ Ya que tengamos Ruby y rbenv instalados, hay algunos commandos que podemos ver p
 * ```ruby -v``` (ahora debería ser 2.2.3)
 
 ####No tengo Homebrew
-Fácil, solo instlálalo: ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```.
+Fácil, solo instlálalo: 
+
+```console 
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
 Homebrew es un manejador de paquetes para installar programas de manera más sencilla en tu sistema. Podríamos decir que es un estándar de la industria.
 
 ###Instalando en Linux
+
+Aún más sencillo:
+
+1. sudo apt-get update
+2. apt-get install ruby-full
+3. git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+4. echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+5. echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+6. Reiniciar tu terminal.
+
+Ya teniendo rbenv podemos hacer lo siguiente:
+
+1. ```rbenv install -l``` (Listado de todas las versiones de Ruby)
+2. ```rbenv install <versión de ruby>``` (2.2.3)
+
+###Instalando en Windows
+
+La instalación en Windows es diferente, es muy común instalar lenguajes de programación por medio de un wizard. Hay una página que se encarga de esto por nosotros:
+
+* (Ruby Installer)[http://rubyinstaller.org/]
+
+##Interactive Shell
